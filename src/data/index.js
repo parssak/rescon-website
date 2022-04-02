@@ -12,8 +12,8 @@ const MASTER_ROUTES = [
   {
     path: "/about",
     label: "about",
-    component: () => import("@/views/about/overview"),
     hidden: false,
+    fake: true,
   },
   {
     path: "/about/overview",
@@ -29,9 +29,21 @@ const MASTER_ROUTES = [
   },
   {
     path: "/about/boards",
-    label: "about/boards",
+    label: "boards",
     component: () => import("@/views/about/boards"),
     hidden: false,
+  },
+  {
+    path: "/about/committees",
+    label: "Commitees ",
+    hidden: false,
+    fake: true,
+  },
+  {
+    path: "/about/committees/anti-racism-roundtable",
+    label: "Anti Racism Roundtable",
+    hidden: false,
+    fake: true,
   },
   {
     path: "/about/committees/anti-racism-roundtable/overview",

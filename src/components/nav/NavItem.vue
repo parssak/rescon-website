@@ -13,14 +13,13 @@
             capitalize
             whitespace-nowrap
             transition
+            text-grey
             hover:text-accent
             focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal,
           "
           @click.stop
         >
-          <router-link :to="path" class="pointer-events-none cursor-none"
-            ><slot></slot
-          ></router-link>
+          <router-link :to="path"><slot></slot></router-link>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="ml-2 h-5 w-5 group-transition"
@@ -46,31 +45,60 @@
           leave-to-class="opacity-0 translate-y-1"
         >
           <PopoverPanel
-            class="
-              absolute
-              right-0
-              mt-3
-              transform
-              z-10
-              px-2
-              w-screen
-              max-w-sm
-              sm:px-0
-              lg:ml-0 lg:left-1/2 lg:-translate-x-1/2
-            "
+            class="absolute mt-3 transform z-10 w-screen max-w-sm lg:ml-0 left-1/2 -translate-x-1/2"
           >
-            <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-              <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+            <div class="border shadow-sm">
+              <div class="relative grid gap-6 bg-white sm:gap-8">
                 <PopoverButton>
                   <router-link
                     v-for="item in dropdownItems"
                     :key="item.label"
                     :to="item.path"
-                    class="-m-3 p-3 flex items-start rounded-lg transition hover:bg-gray-50"
+                    class="p-3 flex items-center transition hover:bg-accent-lightest group relative"
                   >
-                    <p class="text-sm lg:text-base font-medium capitalize text-gray-900">
+                    <p
+                      class="
+                        text-sm
+                        lg:text-base
+                        font-medium
+                        capitalize
+                        text-black
+                        group-hover:text-accent
+                      "
+                    >
                       {{ item.label }}
                     </p>
+                    <svg
+                      v-if="item.dropdownItems.length > 0"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="ml-auto h-5 w-5 group-transition"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                    <div
+                      v-if="item.dropdownItems.length > 0"
+                      class="
+                        absolute
+                        left-full
+                        p-3
+                        group-hover:visible
+                        invisible
+                        whitespace-nowrap
+                        border border-l-0
+                      "
+                    >
+                      <div v-for="inner in item.dropdownItems" :key="inner.path">
+                        {{ inner.label }}
+                      </div>
+                    </div>
                   </router-link>
                 </PopoverButton>
               </div>
@@ -89,7 +117,6 @@
 
 <script>
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
-
 export default {
   name: "NavItem",
   components: {
