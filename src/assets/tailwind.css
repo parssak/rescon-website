@@ -179,7 +179,7 @@ nav .router-link-active:not(.no-show-active):not(.nav-item-mobile)::before {
 }
 
 :root {
-  --nav-gap: 4.5rem;
+  --nav-gap: 5.5rem;
 }
 
 .nav-gap {

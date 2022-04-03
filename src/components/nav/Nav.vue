@@ -1,12 +1,12 @@
 <template>
   <Popover class="fixed left-0 w-full top-0 z-20 bg-white shadow">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <div class="flex justify-between items-center py-10 md:justify-start md:space-x-5">
+      <div class="flex justify-between items-center py-8 md:justify-start md:space-x-5">
         <div class="flex justify-start lg:w-0 flex-1">
           <router-link to="/">
             <span class="sr-only">Company Name</span>
             <div class="flex items-center">
-              <img class="h-7 w-auto" src="@/assets/logo.svg" alt="Company Name" />
+              <img class="h-5 w-auto" src="@/assets/logo.svg" alt="Company Name" />
             </div>
           </router-link>
         </div>
