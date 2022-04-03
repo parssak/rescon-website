@@ -3,7 +3,7 @@
     <div v-if="dropdownItems && dropdownItems.length > 0" class="flex items-center -mr-2">
       <Popover class="relative">
         <PopoverButton
-          class="group rounded-md inline-flex items-center text-base font-medium capitalize whitespace-nowrap transition text-grey hover:text-accent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal,"
+          class="group rounded-md inline-flex items-center text-base font-medium uppercase whitespace-nowrap transition text-grey hover:text-accent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal,"
           @click.stop
         >
           <router-link :to="path"><slot></slot></router-link>
@@ -45,7 +45,7 @@
                     class="p-3 flex items-center transition hover:bg-accent-lightest group relative"
                   >
                     <p
-                      class="text-sm lg:text-base font-medium capitalize text-black group-hover:text-accent"
+                      class="text-sm lg:text-base font-medium uppercase text-black group-hover:text-accent"
                     >
                       {{ item.label }}
                     </p>
@@ -75,7 +75,7 @@
                         :to="inner.path"
                         class="p-3 flex items-center transition hover:bg-accent-lightest hover:text-accent inner-group relative"
                       >
-                        <span class="text-sm lg:text-base font-medium capitalize pr-3">
+                        <span class="text-sm lg:text-base font-medium uppercase pr-3">
                           {{ inner.label }}
                         </span>
                         <svg
@@ -104,7 +104,7 @@
                             :to="thirdInner.path"
                             class="p-3 flex items-center transition hover:bg-accent-lightest hover:text-accent relative"
                           >
-                            <span class="text-sm lg:text-base font-medium capitalize pr-3">
+                            <span class="text-sm lg:text-base font-medium uppercase pr-3">
                               {{ thirdInner.label }}
                             </span>
                             <svg

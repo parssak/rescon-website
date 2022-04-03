@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ruda:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 
@@ -8,7 +8,7 @@
 
 /* #region - Typography -  */
 * {
-  font-family: Inter;
+  font-family: Ruda;
 }
 
 h1 {
@@ -151,7 +151,7 @@ select {
 }
 
 nav a {
-  @apply text-black transition;
+  @apply text-black transition uppercase;
 }
 
 nav a:hover {
