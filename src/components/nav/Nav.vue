@@ -1,46 +1,24 @@
 <template>
   <Popover class="fixed left-0 w-full top-0 z-20 bg-white shadow">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <div
-        class="
-          flex
-          justify-between
-          items-center
-          py-6
-          md:justify-start md:space-x-5
-        "
-      >
+      <div class="flex justify-between items-center py-10 md:justify-start md:space-x-5">
         <div class="flex justify-start lg:w-0 flex-1">
           <router-link to="/">
             <span class="sr-only">Company Name</span>
             <div class="flex items-center">
-              <img
-                class="h-9 w-auto"
-                src="@/assets/logo.svg"
-                alt="Company Name"
-              />
+              <img class="h-7 w-auto" src="@/assets/logo.svg" alt="Company Name" />
             </div>
           </router-link>
         </div>
-        <div class="-mr-2 -my-2 md:hidden">
+        <div class="-mr-2 -my-2 lg:hidden">
           <PopoverButton
-            class="
-              rounded-md
-              p-2
-              inline-flex
-              items-center
-              justify-center
-              text-white
-              hover:text-gray-500
-              transition
-              hover:bg-white
-            "
+            class="rounded-md p-2 inline-flex items-center justify-center text-white hover:text-gray-500 transition hover:bg-white"
           >
             <span class="sr-only">Open menu</span>
             <MenuIcon class="h-6 w-6 text-accent" aria-hidden="true" />
           </PopoverButton>
         </div>
-        <PopoverGroup as="nav" class="hidden md:flex space-x-6 xl:space-x-7">
+        <PopoverGroup as="nav" class="hidden lg:flex space-x-6 xl:space-x-7">
           <NavItem
             v-for="item in navigation"
             :path="item.path"
@@ -63,47 +41,19 @@
     >
       <PopoverPanel
         focus
-        class="
-          absolute
-          top-0
-          inset-x-0
-          z-10
-          p-2
-          transition
-          transform
-          origin-top-right
-          md:hidden
-        "
+        class="absolute top-0 inset-x-0 z-10 p-2 transition transform origin-top-right lg:hidden"
       >
         <div
-          class="
-            rounded-lg
-            shadow-lg
-            ring-1 ring-black ring-opacity-5
-            bg-gray-200
-            divide-y-2 divide-gray-50
-          "
+          class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-gray-200 divide-y-2 divide-gray-50"
         >
           <div class="pt-5 pb-6 px-5">
             <div class="flex items-center justify-between">
               <router-link to="/">
-                <img
-                  class="h-5 w-auto"
-                  src="@/assets/logo.svg"
-                  alt="Company name"
-                />
+                <img class="h-5 w-auto" src="@/assets/logo.svg" alt="Company name" />
               </router-link>
               <div class="-mr-2">
                 <PopoverButton
-                  class="
-                    rounded-md
-                    p-2
-                    inline-flex
-                    items-center
-                    justify-center
-                    transition
-                    hover:bg-accent-lightest
-                  "
+                  class="rounded-md p-2 inline-flex items-center justify-center transition hover:bg-accent-lightest"
                 >
                   <span class="sr-only">Close menu</span>
                   <XIcon class="h-6 w-6 text-accent" aria-hidden="true" />
@@ -134,12 +84,7 @@
 
 <script>
 import NavItem from "@/components/nav/NavItem.vue";
-import {
-  Popover,
-  PopoverButton,
-  PopoverGroup,
-  PopoverPanel,
-} from "@headlessui/vue";
+import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from "@headlessui/vue";
 import { MenuIcon, XIcon } from "@heroicons/vue/outline";
 import { navigation } from "@/data";
 

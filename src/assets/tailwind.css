@@ -52,11 +52,9 @@ ul:not(.unstyled) li::before {
   margin-left: -1em;
 }
 
-
 /* #endregion - Typography -  */
 
 /* #region - Inputs - */
-
 
 a.with-underline {
   @apply relative transition w-max hover:text-accent;
@@ -81,7 +79,6 @@ textarea,
 select {
   @apply border-gray-400 focus:border-accent text-lg py-3 px-4 block w-full rounded-md;
 }
-
 
 .btn {
   @apply w-max inline-flex items-center border border-transparent font-medium shadow-sm transition
@@ -138,7 +135,7 @@ select {
 }
 
 .nav-item-mobile {
-  @apply  mb-1
+  @apply mb-1
                     p-2
                     flex
                     items-center
@@ -146,7 +143,7 @@ select {
                     capitalize
                     transition
                     hover:bg-accent-light
-                    hover:text-accent-dark;
+                    hover:text-white;
 }
 
 .nav-item-mobile__text {
@@ -166,7 +163,7 @@ nav .router-link-active:not(.no-show-active) {
 }
 
 nav .router-link-active:not(.no-show-active).nav-item-mobile {
-  @apply bg-accent;
+  @apply bg-accent text-white;
 }
 
 nav .router-link-active:not(.no-show-active):not(.nav-item-mobile)::before {
@@ -181,7 +178,6 @@ nav .router-link-active:not(.no-show-active):not(.nav-item-mobile)::before {
   transform: translateY(2px);
 }
 
-
 :root {
   --nav-gap: 4.5rem;
 }
@@ -189,7 +185,6 @@ nav .router-link-active:not(.no-show-active):not(.nav-item-mobile)::before {
 .nav-gap {
   margin-bottom: var(--nav-gap);
 }
-
 
 /* #endregion - Nav - */
 
@@ -213,7 +208,6 @@ nav .router-link-active:not(.no-show-active):not(.nav-item-mobile)::before {
 .todo::before {
   content: "TODO: ";
 }
-
 
 /* #endregion-  */
 
@@ -252,3 +246,7 @@ input.unstyled[type="number"] {
 /* #endregion */
 
 
+
+.inner-group:hover .inner-group-items {
+  @apply visible;
+}
