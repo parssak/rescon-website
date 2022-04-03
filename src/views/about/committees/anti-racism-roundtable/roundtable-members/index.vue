@@ -1,5 +1,5 @@
 <template>
-  <Header title="about/committees/anti-racism-roundtable/roundtable-members" />
+  <Header title="Roundtable Members" />
 </template>
 
 <script>
