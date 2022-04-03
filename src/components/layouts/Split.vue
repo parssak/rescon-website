@@ -7,7 +7,7 @@
         <slot name="extra-content"></slot>
       </section>
       <section>
-        <div class="object-cover w-full h-full rounded-md overflow-hidden">
+        <div class="object-cover w-full h-full rounded-xl overflow-hidden">
           <slot></slot>
         </div>
       </section>
