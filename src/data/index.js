@@ -36,8 +36,8 @@ const MASTER_ROUTES = [
   {
     path: "/about/committees",
     label: "Commitees",
+    component: () => import("@/views/about/committees"),
     hidden: false,
-    fake: true,
   },
   {
     path: "/about/committees/anti-racism-roundtable",
@@ -81,7 +81,6 @@ const MASTER_ROUTES = [
     component: () => import("@/views/about/committees/anti-racism-roundtable/roundtable-newsroom"),
     hidden: false,
   },
-  // TODO: ADD PAGES
   {
     path: "/about/committees/building-innovation",
     label: "Building Innovation",

@@ -54,7 +54,7 @@
           {{ post.title }}
         </h3>
         <span>{{ post.author }}</span
-        ><span class="text-gray-500">{{ post.date }}</span>
+        ><span class="text-gray-500 ml-2">{{ post.date }}</span>
         <p class="mt-2">
           {{ post.description }}
         </p>

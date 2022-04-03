@@ -13,6 +13,7 @@ module.exports = {
         accent: {
           darkest: "#036098",
           dark: "#04529c",
+          grad: "#006098",
           DEFAULT: "#0080cb",
           hover: "#365AB9",
           light: "#b19d32",

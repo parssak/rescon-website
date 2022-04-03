@@ -1,18 +1,17 @@
 <template>
   <div class="relative">
     <div class="absolute inset-0">
-      <img
-        class="w-full h-full object-cover"
-        src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&&sat=-100"
-        alt=""
+      <img class="w-full h-full object-cover" :src="imageSrc" alt="" />
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-accent-grad to-transparent opacity-80"
+        aria-hidden="true"
       />
-      <div class="absolute inset-0 bg-accent mix-blend-multiply" aria-hidden="true" />
     </div>
     <Container>
       <div class="py-8">
         <p class="text-white mb-2 tracking-wider">RESCON</p>
         <h1
-          class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl capitalize lg:text-6xl"
+          class="text-4xl font-semibold tracking-wide text-white sm:text-5xl uppercase lg:text-6xl"
         >
           {{ title }}
         </h1>
@@ -32,6 +31,25 @@ export default {
   props: {
     title: String,
     description: String,
+  },
+  computed: {
+    imageSrc() {
+      const baseURL = "/rescon-website/";
+      const bannerURL = baseURL + "/banner/";
+      const { path } = this.$route;
+      switch (path) {
+        case "/about/overview":
+          return bannerURL + "about-overview.png";
+        case "/about/boards":
+          return bannerURL + "about-boards.png";
+        case "/about/committees":
+          return bannerURL + "about-committees.png";
+        case "/about/team":
+          return bannerURL + "about-team.png";
+        default:
+          return bannerURL + "about-overview.png";
+      }
+    },
   },
 };
 </script>

@@ -14,7 +14,6 @@ export const getNavigation = (routes) => {
   for (const route of routes) {
     if (route.hidden) continue;
     const baseRoute = route.path.split("/")[1];
-    // console.debug(baseRoute);
     const indexBaseRoute = navItems.findIndex((item) => item.path === `/${baseRoute}`);
 
     if (indexBaseRoute === -1) {
@@ -22,6 +21,7 @@ export const getNavigation = (routes) => {
         path: `/${baseRoute}`,
         label: route.label,
         dropdownItems: [],
+        fake: route.fake,
       });
     } else if (!route.path.includes(":")) {
       // get number of / in route.path
@@ -32,6 +32,7 @@ export const getNavigation = (routes) => {
           path: route.path,
           label: route.label,
           dropdownItems: [],
+          fake: route.fake,
         });
       } else if (numberOfSlashes === 3) {
         // take substring of route.path before the last /
@@ -46,6 +47,7 @@ export const getNavigation = (routes) => {
             path: route.path,
             label: route.label,
             dropdownItems: [],
+            fake: route.fake,
           });
         }
       } else if (numberOfSlashes === 4) {
@@ -68,6 +70,7 @@ export const getNavigation = (routes) => {
             path: route.path,
             label: route.label,
             dropdownItems: [],
+            fake: route.fake,
           });
         }
       }
