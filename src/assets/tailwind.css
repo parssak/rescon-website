@@ -40,11 +40,11 @@ ul:not(.unstyled) {
 }
 
 ul:not(.unstyled) li {
-  @apply pl-4 text-black;
+  @apply pl-4 text-offblack;
 }
 
 ul:not(.unstyled) li::before {
-  @apply text-accent;
+  @apply text-offblack;
   content: "\2022";
   font-weight: bold;
   display: inline-block;
