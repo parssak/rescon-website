@@ -50,7 +50,9 @@
     <div class="grid gap-8 lg:grid-cols-3">
       <router-link v-for="post in blogs" :key="post.title" :to="post.href">
         <img src="@/assets/images/hardhats.png" alt="assortment of hard hats" class="rounded-lg" />
-        <h3 class="mt-8 mb-2 text-accent-darkest text-2xl capitalize underline">{{ post.title }}</h3>
+        <h3 class="mt-8 mb-2 text-accent-darkest text-2xl capitalize underline">
+          {{ post.title }}
+        </h3>
         <span>{{ post.author }}</span
         ><span class="text-gray-500">{{ post.date }}</span>
         <p class="mt-2">
@@ -60,9 +62,21 @@
     </div>
   </Container>
 
-  <!-- Container -->
-  <Container>
-    <h2>Join Rescon</h2>
+  <!-- SIGN UP FOR OUR NEWSLETTER -->
+  <Container class="bg-accent-dark">
+    <div class="md:flex">
+      <div>
+        <h2 class="text-white mb-4">SIGN UP FOR OUR NEWSLETTER</h2>
+        <p class="text-white">
+          Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo.
+          Elit sunt amet fugiat veniam occaecat fugiat.
+        </p>
+      </div>
+      <div class="md:w-1/3 mt-4 md:mt-0 flex-shrink-0 md:ml-4 flex items-center">
+        <input type="email" placeholder="Enter your email" class="w-full" />
+        <button class="btn btn-xl ml-3 btn-light flex-shrink-0">Sign up</button>
+      </div>
+    </div>
   </Container>
 </template>
 
