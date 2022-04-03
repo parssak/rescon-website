@@ -46,6 +46,10 @@ export default {
           return bannerURL + "about-committees.png";
         case "/about/team-members":
           return bannerURL + "about-team.png";
+        case "/about/committees/anti-racism-roundtable/overview":
+          return bannerURL + "about-arr-overview.png";
+        case "/about/committees/anti-racism-roundtable/bipoc-initiative":
+          return bannerURL + "about-arr-bipoc.png";
         default:
           return bannerURL + "about-overview.png";
       }
