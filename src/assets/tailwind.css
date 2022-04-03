@@ -12,15 +12,15 @@
 }
 
 h1 {
-  @apply text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl;
+  @apply text-4xl tracking-wider font-semibold text-accent-light sm:text-5xl md:text-6xl uppercase;
 }
 
 h2 {
-  @apply text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900 mb-6 md:mb-8;
+  @apply text-4xl md:text-5xl font-semibold tracking-wider text-accent-light mb-6 md:mb-8 uppercase;
 }
 
 h3 {
-  @apply text-2xl md:text-3xl font-extrabold tracking-tight text-gray-900 mb-4 md:mb-6;
+  @apply text-2xl md:text-3xl font-semibold tracking-wider text-accent-light mb-4 md:mb-6 uppercase;
 }
 
 .footer-heading {
@@ -32,7 +32,7 @@ h4 {
 }
 
 p {
-  @apply text-base text-gray-500 leading-relaxed;
+  @apply text-lg text-offblack leading-relaxed tracking-wide;
 }
 
 ul:not(.unstyled) {
@@ -91,7 +91,7 @@ select {
 }
 
 .btn-light {
-  @apply text-accent bg-accent-light hover:bg-accent-light_hover;
+  @apply text-offblack bg-accent-light hover:bg-accent-light_hover;
 }
 
 .btn-xs {
@@ -244,8 +244,6 @@ input.unstyled[type="number"] {
 }
 
 /* #endregion */
-
-
 
 .inner-group:hover .inner-group-items {
   @apply visible;

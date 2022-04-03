@@ -2,7 +2,7 @@
   <main class="relative">
     <div class="absolute inset-0 w-full h-full">
       <img
-        src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&&sat=-100"
+        src="@/assets/hero.png"
         alt=""
         class="w-full h-full object-cover"
       />

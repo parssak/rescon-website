@@ -9,6 +9,7 @@ module.exports = {
         sans: ["Ruda", ...defaultTheme.fontFamily.sans],
       },
       colors: {
+        offblack: "#222222",
         accent: {
           darkest: "#036098",
           dark: "#04529c",
