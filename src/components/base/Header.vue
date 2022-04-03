@@ -44,7 +44,7 @@ export default {
           return bannerURL + "about-boards.png";
         case "/about/committees":
           return bannerURL + "about-committees.png";
-        case "/about/team":
+        case "/about/team-members":
           return bannerURL + "about-team.png";
         default:
           return bannerURL + "about-overview.png";

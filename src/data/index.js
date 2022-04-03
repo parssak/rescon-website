@@ -28,6 +28,12 @@ const MASTER_ROUTES = [
     hidden: false,
   },
   {
+    path: "/about/team-members/:team_id",
+    label: "team member",
+    component: () => import("@/views/about/team-members/:team_id"),
+    hidden: false,
+  },
+  {
     path: "/about/boards",
     label: "boards",
     component: () => import("@/views/about/boards"),
@@ -235,3 +241,96 @@ const MASTER_ROUTES = [
 export const routes = getRoutes(MASTER_ROUTES);
 
 export const navigation = getNavigation(MASTER_ROUTES);
+
+export const people = [
+  {
+    name: "Richard Lyall",
+    id: "richard-lyall",
+    title: "President",
+    socials: {
+      twitter: "https://twitter.com/",
+      linkedin: "https://www.linkedin.com/",
+    },
+  },
+  {
+    name: "Andrew Pariser",
+    id: "andrew-pariser",
+    title: "Vice-President",
+    socials: {
+      twitter: "https://twitter.com/",
+      linkedin: "https://www.linkedin.com/",
+    },
+  },
+  {
+    name: "Grant Cameron",
+    id: "grant-cameron",
+    title: "Senior Director of Public Affairs",
+    socials: {
+      twitter: "https://twitter.com/",
+      linkedin: "https://www.linkedin.com/",
+    },
+  },
+  {
+    name: "Paul De Berardis",
+    id: "paul-de-berardis",
+    title: "Director of Building Science and Innovation",
+    socials: {
+      twitter: "https://twitter.com/",
+      linkedin: "https://www.linkedin.com/",
+    },
+  },
+  {
+    name: "Amina Dibe",
+    id: "amina-dibe",
+    title: "Manager of Government and Stakeholder Relations",
+    socials: {
+      twitter: "https://twitter.com/",
+      linkedin: "https://www.linkedin.com/",
+    },
+  },
+  {
+    name: "Michael De Lint",
+    id: "michael-de-lint",
+    title: "Director of Building Regulatory Reform and Technical Standards",
+    socials: {
+      twitter: "https://twitter.com/",
+      linkedin: "https://www.linkedin.com/",
+    },
+  },
+  {
+    name: "Ellen Cleverdon",
+    id: "ellen-cleverdon",
+    title: "Office Manager",
+    socials: {
+      twitter: "https://twitter.com/",
+      linkedin: "https://www.linkedin.com/",
+    },
+  },
+  {
+    name: "Rose Cleverdon",
+    id: "rose-cleverdon",
+    title: "Office Administrator",
+    socials: {
+      twitter: "https://twitter.com/",
+      linkedin: "https://www.linkedin.com/",
+    },
+  },
+  {
+    name: "Ahd Alashry",
+    id: "ahd-alashry",
+    title: "Policy and Programs Analyst",
+    socials: {
+      twitter: "https://twitter.com/",
+      linkedin: "https://www.linkedin.com/",
+    },
+  },
+  {
+    name: "Nancy hizaka-vilardo",
+    id: "nancy-hizaka-vilardo",
+    title: "Director of Operations for Member Services",
+    socials: {
+      twitter: "https://twitter.com/",
+      linkedin: "https://www.linkedin.com/",
+    },
+  },
+];
