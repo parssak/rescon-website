@@ -6,6 +6,7 @@
         class="absolute inset-0 bg-gradient-to-r from-accent-grad to-transparent opacity-80"
         aria-hidden="true"
       />
+      <div :class="`absolute inset-0 ${blueBG ? 'bg-accent-dark' : 'bg-transparent'} `"></div>
     </div>
     <Container>
       <div class="py-8">
@@ -56,9 +57,32 @@ export default {
           return bannerURL + "about-arr-timeline.png";
         case "/about/committees/anti-racism-roundtable/roundtable-resources":
           return bannerURL + "about-arr-resources.png";
+        case "/about/committees/anti-racism-roundtable/roundtable-newsroom":
+          return bannerURL + "about-arr-newsroom.png";
+        case "/about/committees/building-innovation":
+          return bannerURL + "about-innovation.png";
+        case "/about/committees/health-and-safety":
+          return bannerURL + "about-health.png";
+        case "/about/committees/technical-council":
+          return bannerURL + "about-technical.png";
+        case "/about/committees/training-and-education":
+          return bannerURL + "about-training.png";
+        case "/about/our-affiliates":
+          return bannerURL + "about-aff.png";
+        case "/about/our-affiliates/training-and-education":
+          return bannerURL + "about-aff-train.png";
+        case "/about/our-affiliates/health-and-safety":
+          return bannerURL + "about-aff-health.png";
+        case "/about/our-affiliates/industry":
+          return bannerURL + "about-aff-industry.png";
+
         default:
           return bannerURL + "about-overview.png";
       }
+    },
+    blueBG() {
+      const { path } = this.$route;
+      return path.includes("/about/our-partners");
     },
   },
 };
