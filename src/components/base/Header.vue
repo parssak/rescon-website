@@ -75,7 +75,10 @@ export default {
           return bannerURL + "about-aff-health.png";
         case "/about/our-affiliates/industry":
           return bannerURL + "about-aff-industry.png";
-
+        case "/media/in-the-news":
+          return bannerURL + "media-news.png";
+        case "/media/press-releases":
+          return bannerURL + "media-pr.png";
         default:
           return bannerURL + "about-overview.png";
       }

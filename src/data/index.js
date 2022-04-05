@@ -184,6 +184,12 @@ const MASTER_ROUTES = [
     hidden: false,
   },
   {
+    path: "/media/press-releases/:id",
+    label: "press releases",
+    component: () => import("@/views/media/press-releases/:id"),
+    hidden: true,
+  },
+  {
     path: "/media/blog",
     label: "blog",
     component: () => import("@/views/media/blog"),
