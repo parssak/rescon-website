@@ -144,14 +144,14 @@ const MASTER_ROUTES = [
   {
     path: "/about/our-affiliates",
     label: "our affiliates",
-    component: () => import("@/views/about/our-affiliates/training-and-safety"),
+    component: () => import("@/views/about/our-affiliates"),
     hidden: false,
     fake: true,
   },
   {
-    path: "/about/our-affiliates/training-and-safety",
-    label: "training & safety",
-    component: () => import("@/views/about/our-affiliates/training-and-safety"),
+    path: "/about/our-affiliates/training-and-education",
+    label: "training & education",
+    component: () => import("@/views/about/our-affiliates/training-and-education"),
     hidden: false,
   },
   {

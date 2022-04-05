@@ -1,6 +1,5 @@
 <template>
-  <Header title="industry" />
-
+  <Header title="affiliations - training & education" />
   <Container>
     <div class="flex flex-col lg:flex-row gap-12">
       <div class="w-max lg:w-full lg:mx-12">

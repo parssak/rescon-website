@@ -50,6 +50,12 @@ export default {
           return bannerURL + "about-arr-overview.png";
         case "/about/committees/anti-racism-roundtable/bipoc-initiative":
           return bannerURL + "about-arr-bipoc.png";
+        case "/about/committees/anti-racism-roundtable/roundtable-members":
+          return bannerURL + "about-arr-members.png";
+        case "/about/committees/anti-racism-roundtable/roundtable-timeline":
+          return bannerURL + "about-arr-timeline.png";
+        case "/about/committees/anti-racism-roundtable/roundtable-resources":
+          return bannerURL + "about-arr-resources.png";
         default:
           return bannerURL + "about-overview.png";
       }
