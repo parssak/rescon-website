@@ -61,13 +61,13 @@
       <div class="flex-1 flex justify-between sm:justify-end">
         <a
           href="#"
-          class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
+          class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md btn-grey"
         >
           Previous
         </a>
         <a
           href="#"
-          class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
+          class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md btn-grey"
         >
           Next
         </a>
@@ -84,8 +84,8 @@ import BlogCardsPage from "@/components/layouts/blog/BlogCardsPage.vue";
 const defaultPosts = [
   {
     title: "Blog Post",
-    href: "/blog/post",
-    category: { name: "Article", href: "/blog/post" },
+    href: "/media/blog/post",
+    category: { name: "Article", href: "/media/blog/post" },
     description:
       "Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.",
     date: "Mar 16, 2020",
@@ -94,15 +94,15 @@ const defaultPosts = [
     readingTime: "6 min",
     author: {
       name: "Randy Rescon",
-      href: "/blog/post",
+      href: "/media/blog/post",
       imageUrl:
         "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
   },
   {
     title: "Blog Post",
-    href: "/blog/post",
-    category: { name: "Video", href: "/blog/post" },
+    href: "/media/blog/post",
+    category: { name: "Video", href: "/media/blog/post" },
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab iure iusto fugiat commodi sequi.",
     date: "Mar 10, 2020",
@@ -111,15 +111,15 @@ const defaultPosts = [
     readingTime: "4 min",
     author: {
       name: "Randy Rescon",
-      href: "/blog/post",
+      href: "/media/blog/post",
       imageUrl:
         "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
   },
   {
     title: "Blog Post",
-    href: "/blog/post",
-    category: { name: "Case Study", href: "/blog/post" },
+    href: "/media/blog/post",
+    category: { name: "Case Study", href: "/media/blog/post" },
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab iure iusto fugiat commodi sequi.",
     date: "Feb 12, 2020",
@@ -128,15 +128,15 @@ const defaultPosts = [
     readingTime: "11 min",
     author: {
       name: "Randy Rescon",
-      href: "/blog/post",
+      href: "/media/blog/post",
       imageUrl:
         "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
   },
   {
     title: "Blog Post",
-    href: "/blog/post",
-    category: { name: "Article", href: "/blog/post" },
+    href: "/media/blog/post",
+    category: { name: "Article", href: "/media/blog/post" },
     description:
       "Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.",
     date: "Mar 16, 2020",
@@ -145,15 +145,15 @@ const defaultPosts = [
     readingTime: "6 min",
     author: {
       name: "Randy Rescon",
-      href: "/blog/post",
+      href: "/media/blog/post",
       imageUrl:
         "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
   },
   {
     title: "Blog Post",
-    href: "/blog/post",
-    category: { name: "Video", href: "/blog/post" },
+    href: "/media/blog/post",
+    category: { name: "Video", href: "/media/blog/post" },
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab iure iusto fugiat commodi sequi.",
     date: "Mar 10, 2020",
@@ -162,15 +162,15 @@ const defaultPosts = [
     readingTime: "4 min",
     author: {
       name: "Randy Rescon",
-      href: "/blog/post",
+      href: "/media/blog/post",
       imageUrl:
         "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
   },
   {
     title: "Blog Post",
-    href: "/blog/post",
-    category: { name: "Case Study", href: "/blog/post" },
+    href: "/media/blog/post",
+    category: { name: "Case Study", href: "/media/blog/post" },
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab iure iusto fugiat commodi sequi.",
     date: "Feb 12, 2020",
@@ -179,7 +179,7 @@ const defaultPosts = [
     readingTime: "11 min",
     author: {
       name: "Randy Rescon",
-      href: "/blog/post",
+      href: "/media/blog/post",
       imageUrl:
         "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },

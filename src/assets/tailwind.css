@@ -94,6 +94,10 @@ select {
   @apply text-offblack bg-accent-light hover:bg-accent-light_hover;
 }
 
+.btn-grey {
+  @apply text-offblack bg-btnGrey hover:bg-btnGrey-hover;
+}
+
 .btn-xs {
   @apply px-2.5 py-1.5 text-xs rounded;
 }

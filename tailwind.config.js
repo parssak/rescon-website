@@ -10,6 +10,10 @@ module.exports = {
       },
       colors: {
         offblack: "#222222",
+        btnGrey: {
+          DEFAULT: "#CBCBCB",
+          hover: "#e2e2e2",
+        },
         accent: {
           darkest: "#036098",
           dark: "#04529c",
@@ -18,7 +22,7 @@ module.exports = {
           hover: "#365AB9",
           light: "#b19d32",
           light_hover: "#d2c060",
-          lightest: "#f2f2f2", 
+          lightest: "#f2f2f2",
         },
       },
     },

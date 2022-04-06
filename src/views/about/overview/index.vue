@@ -58,9 +58,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur pelle
         Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo.
         Elit sunt amet fugiat veniam occaecat fugiat.
       </p>
-      <router-link to="/contact" class="btn btn-xl btn-light mt-6">
-        Get in touch
-      </router-link>
+      <router-link to="/contact" class="btn btn-xl btn-light mt-6"> Get in touch </router-link>
     </div>
   </Container>
 </template>

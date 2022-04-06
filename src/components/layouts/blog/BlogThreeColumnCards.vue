@@ -1,26 +1,14 @@
 <template>
   <Container>
     <div class="text-center mb-12" v-if="showHeading">
-      <h2
-        class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl"
-      >
+      <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
         {{ title }}
       </h2>
-      <p
-        class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4 font-light"
-      >
+      <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4 font-light">
         {{ description }}
       </p>
     </div>
-    <div
-      class="
-        max-w-xl
-        mx-auto
-        grid
-        gap-8
-        lg:gap-y-9 lg:grid-cols-3 lg:max-w-none
-      "
-    >
+    <div class="max-w-xl mx-auto grid gap-8 lg:gap-y-9 lg:grid-cols-3 lg:max-w-none">
       <div
         v-for="post in posts"
         :key="post.title"
@@ -49,11 +37,7 @@
             <div class="flex-shrink-0">
               <router-link :to="post.href">
                 <span class="sr-only">{{ post.author.name }}</span>
-                <img
-                  class="h-10 w-10 rounded-full"
-                  :src="post.author.imageUrl"
-                  alt=""
-                />
+                <img class="h-10 w-10 rounded-full" :src="post.author.imageUrl" alt="" />
               </router-link>
             </div>
             <div class="ml-3">

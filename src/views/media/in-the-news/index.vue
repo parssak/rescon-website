@@ -2,7 +2,7 @@
   <Header title="in the news" />
 
   <Container>
-    <div class="space-y-6">
+    <div class="space-y-10">
       <router-link to="/media/in-the-news/article" v-for="a in articles" :key="a.id" class="block">
         <h3 class="text-accent-dark underline text-xl capitalize mb-2">{{ a.title }}</h3>
         <p class="uppercase text-sm text-gray-500">{{ a.date }}</p>
@@ -33,13 +33,13 @@
       <div class="flex-1 flex justify-between sm:justify-end">
         <a
           href="#"
-          class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
+          class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md btn-grey"
         >
           Previous
         </a>
         <a
           href="#"
-          class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
+          class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md btn-grey"
         >
           Next
         </a>

@@ -2,11 +2,11 @@
   <Header title="Metropolitan Toronto Apartment Builders Association" />
 
   <Container>
-    <div class="flex flex-col lg:flex-row gap-12">
-      <div class="mx-auto w-max md:w-full md:mx-12">
-        <img src="@/assets/images/mtaba.png" alt="mtaba" class="object-contain" />
+    <div class="grid md:grid-cols-12 gap-12">
+      <div class="md:col-span-3">
+        <img src="@/assets/images/mtaba.png" alt="mtaba" class="object-contain w-full max-w-xs" />
       </div>
-      <p class="">
+      <p class="md:col-span-9">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra laoreet mauris, arcu
         consequat imperdiet accumsan. Quis adipiscing ipsum nisl, habitasse molestie euismod
         vivamus. Sed amet non enim scelerisque non. Rhoncus interdum porttitor cras nisi dolor a
