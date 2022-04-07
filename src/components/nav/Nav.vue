@@ -61,7 +61,7 @@
               </div>
             </div>
             <div class="mt-6">
-              <nav class="grid gap-y-8">
+              <!-- <nav class="grid gap-y-8">
                 <PopoverButton>
                   <router-link
                     v-for="item in navigation"
@@ -70,6 +70,96 @@
                     class="nav-item-mobile"
                   >
                     <span class="nav-item-mobile__text">{{ item.label }}</span>
+                  </router-link>
+                </PopoverButton>
+              </nav> -->
+              <nav class="grid">
+                <PopoverButton>
+                  <router-link to="/" class="nav-item-mobile">
+                    <span class="nav-item-mobile__text">Home</span>
+                  </router-link>
+                </PopoverButton>
+
+                <!-- ABOUT -->
+                <Disclosure v-slot="{ open }">
+                  <DisclosureButton class="cursor-pointer">
+                    <router-link to="/about" class="nav-item-mobile pointer-events-none flex">
+                      <span class="nav-item-mobile__text">About Us</span>
+                      <ChevronUpIcon
+                        :class="open ? 'transform rotate-180' : ''"
+                        class="w-5 h-5 text-accent ml-auto"
+                      />
+                    </router-link>
+                  </DisclosureButton>
+                  <DisclosurePanel class="ml-2 grid">
+                    <PopoverButton v-for="section in aboutSections" :key="section.href">
+                      <router-link :to="section.href" class="nav-item-mobile">
+                        <span class="nav-item-mobile__text">{{ section.label }}</span>
+                      </router-link>
+                    </PopoverButton>
+                  </DisclosurePanel>
+                </Disclosure>
+
+                <!-- MEDIA -->
+                <Disclosure v-slot="{ open }">
+                  <DisclosureButton class="cursor-pointer">
+                    <router-link to="/media" class="nav-item-mobile pointer-events-none flex">
+                      <span class="nav-item-mobile__text">Media</span>
+                      <ChevronUpIcon
+                        :class="open ? 'transform rotate-180' : ''"
+                        class="w-5 h-5 text-accent ml-auto"
+                      />
+                    </router-link>
+                  </DisclosureButton>
+                  <DisclosurePanel class="ml-2 grid">
+                    <PopoverButton v-for="section in mediaSections" :key="section.href">
+                      <router-link :to="section.href" class="nav-item-mobile">
+                        <span class="nav-item-mobile__text">{{ section.label }}</span>
+                      </router-link>
+                    </PopoverButton>
+                  </DisclosurePanel>
+                </Disclosure>
+
+                <PopoverButton>
+                  <router-link to="/submissions" class="nav-item-mobile">
+                    <span class="nav-item-mobile__text">Submissions</span>
+                  </router-link>
+                </PopoverButton>
+
+                <!-- events -->
+                <Disclosure v-slot="{ open }">
+                  <DisclosureButton class="cursor-pointer">
+                    <router-link to="/events" class="nav-item-mobile pointer-events-none flex">
+                      <span class="nav-item-mobile__text">events</span>
+                      <ChevronUpIcon
+                        :class="open ? 'transform rotate-180' : ''"
+                        class="w-5 h-5 text-accent ml-auto"
+                      />
+                    </router-link>
+                  </DisclosureButton>
+                  <DisclosurePanel class="ml-2 grid">
+                    <PopoverButton v-for="section in eventsSections" :key="section.href">
+                      <router-link :to="section.href" class="nav-item-mobile">
+                        <span class="nav-item-mobile__text">{{ section.label }}</span>
+                      </router-link>
+                    </PopoverButton>
+                  </DisclosurePanel>
+                </Disclosure>
+
+                <PopoverButton>
+                  <router-link to="/orcca" class="nav-item-mobile">
+                    <span class="nav-item-mobile__text">ORCCA</span>
+                  </router-link>
+                </PopoverButton>
+                <PopoverButton>
+                  <router-link to="/collective-agreements" class="nav-item-mobile">
+                    <span class="nav-item-mobile__text">collective agreements</span>
+                  </router-link>
+                </PopoverButton>
+
+                <PopoverButton>
+                  <router-link to="/contact" class="nav-item-mobile">
+                    <span class="nav-item-mobile__text">Contact</span>
                   </router-link>
                 </PopoverButton>
               </nav>
@@ -84,10 +174,50 @@
 
 <script>
 import NavItem from "@/components/nav/NavItem.vue";
-import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from "@headlessui/vue";
-import { MenuIcon, XIcon } from "@heroicons/vue/outline";
+import {
+  Popover,
+  PopoverButton,
+  PopoverGroup,
+  PopoverPanel,
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+} from "@headlessui/vue";
+import { MenuIcon, XIcon, ChevronUpIcon } from "@heroicons/vue/outline";
 import { navigation } from "@/data";
 
+const aboutSections = [
+  {
+    href: "/about/overview",
+    label: "Overview",
+  },
+  { href: "/about/team-members", label: "team members" },
+  { href: "/about/boards", label: "board members" },
+  { href: "/about/committees", label: "Commitees" },
+  {
+    href: "/about/our-affiliates",
+    label: "our affiliates",
+  },
+];
+
+const mediaSections = [
+  {
+    href: "/media/press-releases",
+    label: "Press Releases",
+  },
+  { href: "/media/in-the-news", label: "In the News" },
+  { href: "/media/blog", label: "blog" },
+  { href: "/media/videos", label: "Videos" },
+  { href: "/media/newsletters", label: "newsletters" },
+];
+
+const eventsSections = [
+  {
+    href: "/events/upcoming-events",
+    label: "Upcoming Events",
+  },
+  { href: "/events/past-events", label: "Past Events" },
+];
 export default {
   components: {
     Popover,
@@ -97,9 +227,13 @@ export default {
     MenuIcon,
     XIcon,
     NavItem,
+    Disclosure,
+    DisclosureButton,
+    DisclosurePanel,
+    ChevronUpIcon,
   },
   setup() {
-    return { navigation };
+    return { navigation, aboutSections, mediaSections, eventsSections };
   },
 };
 </script>
