@@ -4,9 +4,9 @@
       <div class="flex justify-between items-center py-8 md:justify-start md:space-x-5">
         <div class="flex justify-start lg:w-0 flex-1">
           <router-link to="/">
-            <span class="sr-only">Company Name</span>
+            <span class="sr-only">Rescon</span>
             <div class="flex items-center">
-              <img class="h-5 w-auto" src="@/assets/logo.svg" alt="Company Name" />
+              <img class="h-5 w-auto" src="@/assets/logo.svg" alt="Rescon" />
             </div>
           </router-link>
         </div>
@@ -49,7 +49,7 @@
           <div class="pt-5 pb-6 px-5">
             <div class="flex items-center justify-between">
               <router-link to="/">
-                <img class="h-5 w-auto" src="@/assets/logo.svg" alt="Company name" />
+                <img class="h-5 w-auto" src="@/assets/logo.svg" alt="Rescon" />
               </router-link>
               <div class="-mr-2">
                 <PopoverButton

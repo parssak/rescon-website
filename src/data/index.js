@@ -6,12 +6,15 @@ const MASTER_ROUTES = [
   {
     path: "/",
     label: "home",
+    footerLabel: "home",
     component: () => import("@/views/home"),
     hidden: false,
   },
   {
     path: "/about",
     label: "about",
+    footerLabel: "about",
+
     hidden: false,
     fake: true,
   },
@@ -200,7 +203,7 @@ const MASTER_ROUTES = [
     label: "blog",
     component: () => import("@/views/media/blog/:id"),
     hidden: true,
-  },  
+  },
   {
     path: "/media/videos",
     label: "videos",
@@ -209,7 +212,7 @@ const MASTER_ROUTES = [
   },
   {
     path: "/media/newsletters",
-    label: "media/newsletters",
+    label: "newsletters",
     component: () => import("@/views/media/newsletters"),
     hidden: false,
   },

@@ -79,6 +79,25 @@ export default {
           return bannerURL + "media-news.png";
         case "/media/press-releases":
           return bannerURL + "media-pr.png";
+        case "/media/blog":
+          return bannerURL + "media-blog.png";
+        case "/media/videos":
+          return bannerURL + "media-videos.png";
+        case " /media/newsletters":
+          return bannerURL + "media-newsletters.png";
+        case "/submissions":
+          return bannerURL + "submissions.png";
+        case "/events/upcoming-events":
+          return bannerURL + "events-upcoming.png";
+        case "/events/past-events":
+          return bannerURL + "events-past.png";
+        case "/orcca":
+          return bannerURL + "orcca.png";
+        case "/collective-agreements":
+          return bannerURL + "collective-agreements.png";
+        case "/contact":
+          return bannerURL + "contact.png";
+
         default:
           return bannerURL + "about-overview.png";
       }
