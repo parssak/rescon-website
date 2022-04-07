@@ -1,7 +1,15 @@
 <template>
-  <div class=" flex flex-col overflow-x-hidden">
+  <div class="flex flex-col overflow-x-hidden">
     <div class="bg-accent-lightest p-8">
-      <div class="todo max-w-7xl mx-auto">breadcrumbs</div>
+      <div class="lg:max-w-7xl lg:mx-auto px-4 sm:px-6 lg:px-8 flex space-x-5 items-center text-sm md:text-base">
+        <router-link to="/">
+          <HomeIcon class="w-5 h-5" />
+        </router-link>
+        <div>/</div>
+        <router-link to="/about/team-members" class="uppercase">Team Members</router-link>
+        <div>/</div>
+        <span class="uppercase text-accent-dark">{{ item.name }}</span>
+      </div>
     </div>
     <div class="bg-accent-dark lg:p-12">
       <Split
@@ -38,12 +46,15 @@
 import Split from "../../../../components/layouts/Split.vue";
 import FullSplit from "@/components/layouts/FullSplit.vue";
 import Header from "@/components/base/Header";
+import { HomeIcon } from "@heroicons/vue/solid";
+
 import { people } from "@/data";
 export default {
   components: {
     Header,
     FullSplit,
     Split,
+    HomeIcon,
   },
   data() {
     return {

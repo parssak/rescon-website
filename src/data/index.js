@@ -113,7 +113,6 @@ const MASTER_ROUTES = [
     label: "Training & Education",
     component: () => import("@/views/about/committees/training-and-education"),
   },
-  // END TODO
   {
     path: "/about/our-partners",
     label: "Our Partners",
