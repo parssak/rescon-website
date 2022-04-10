@@ -29,7 +29,7 @@
         <img
           src="@/assets/images/jrca.png"
           alt="jrca logo"
-          class="w-full h-full object-contain max-w-xs"
+          class="object-contain w-48 md:w-full md:max-w-xs"
         />
         <h3 class="text-3xl text-black mt-8 mb-2">JRCA</h3>
         <p>Joint Residential Construction <br />Association Board</p>
@@ -41,7 +41,7 @@
         <img
           src="@/assets/images/mtaba.png"
           alt="mtaba logo"
-          class="w-full h-full object-contain max-w-xs"
+          class="object-contain w-48 md:w-full md:max-w-xs"
         />
         <h3 class="text-3xl text-black mt-8 mb-2">MTABA</h3>
         <p>
@@ -56,7 +56,7 @@
         <img
           src="@/assets/images/trclb.png"
           alt="trclb logo"
-          class="w-full h-full object-contain max-w-xs"
+          class="object-contain w-48 md:w-full md:max-w-xs"
         />
         <h3 class="text-3xl text-black mt-8 mb-2">TRCLB</h3>
         <p>
@@ -71,7 +71,7 @@
         <img
           src="@/assets/images/drclb.png"
           alt="drclb logo"
-          class="w-full h-full object-contain max-w-xs"
+          class="object-contain w-48 md:w-full md:max-w-xs"
         />
         <h3 class="text-3xl text-black mt-8 mb-2">DRCLB</h3>
         <p>

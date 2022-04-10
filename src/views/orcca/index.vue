@@ -4,7 +4,11 @@
   <Container>
     <div class="grid md:grid-cols-12 gap-12">
       <div class="md:col-span-3">
-        <img src="@/assets/images/orcca.png" alt="trclb" class="object-contain w-full max-w-xs" />
+        <img
+          src="@/assets/images/orcca.png"
+          alt="orcca"
+          class="object-contain w-48 md:w-full md:max-w-xs"
+        />
       </div>
       <div class="md:col-span-9">
         <h3>Ontario Residential Council of Construction Associations</h3>

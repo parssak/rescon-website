@@ -25,7 +25,7 @@
     <img
       src="@/assets/images/smile-hardhats.png"
       alt="people smiling wearing suits and hardhats"
-      class="h-full object-cover"
+      class="h-full object-cover max-h-96 md:max-h-full"
     />
   </Split>
 

@@ -11,7 +11,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur pelle
     <img
       src="@/assets/images/smile-hardhats.png"
       alt="people smiling wearing suits and hardhats"
-      class="h-full object-cover"
+      class="h-full object-cover max-h-96 md:max-h-full"
     />
   </Split>
 
@@ -21,10 +21,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur pelle
       <img
         src="@/assets/images/lightbulb.png"
         alt="lightbulb"
-        class="absolute inset-0 object-cover"
+        class="absolute inset-0 object-cover w-full h-full"
       />
       <div class="absolute inset-0 bg-accent mix-blend-multiply opacity-80"></div>
-      <div class="relative">
+      <div class="relative px-4">
         <h2 class="text-white mb-4">Our Mission</h2>
         <p class="max-w-2xl text-white">
           RESCON is Ontario's leading association of residential builders committed to providing
