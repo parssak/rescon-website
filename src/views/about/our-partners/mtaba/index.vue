@@ -4,7 +4,7 @@
   <Container>
     <div class="grid md:grid-cols-12 gap-12">
       <div class="md:col-span-3">
-        <img src="@/assets/images/mtaba.png" alt="mtaba" class="object-contain w-full max-w-xs" />
+        <img src="@/assets/images/mtaba.png" alt="mtaba" class="object-contain w-48 md:w-full md:max-w-xs" />
       </div>
       <p class="md:col-span-9">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra laoreet mauris, arcu
