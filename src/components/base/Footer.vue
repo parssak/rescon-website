@@ -59,7 +59,7 @@
     </div>
   </footer>
   <div class="mt-8 py-8 border-t-4 border-accent bg-accent-lightest">
-    <div class="lg:max-w-7xl lg:mx-auto px-4 sm:px-6 lg:px-8 md:flex md:justify-between">
+    <div class="lg:max-w-7xl space-y-4 lg:space-y-0 lg:mx-auto px-4 sm:px-6 lg:px-8 md:flex md:justify-between">
       <div>
         <p class="text-base text-gray-400">&copy; Copyright 2021 Rescon</p>
       </div>
